@@ -9,7 +9,7 @@ using namespace Tins;
 int main() {
 
 	int cnt = 0;
-	while(cnt<5000) {
+	while(cnt < 5000) {
 		Dot11Beacon beacon;
 		// Make this a broadcast frame. Note that Dot11::BROADCAST
 		// is just the same as "ff:ff:ff:ff:ff:ff"
