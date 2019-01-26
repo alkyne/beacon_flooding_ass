@@ -5,7 +5,6 @@
 #include <cstdlib>
 
 using namespace Tins;
-using namespace std;
 
 int main() {
 
@@ -28,7 +27,7 @@ int main() {
 		// This is our list of supported rates:
 		beacon.supported_rates({ 1.0f, 5.5f, 11.0f });
 		// Let's add an ssid option
-		std::string e_ssid = "gilgil_is_handsome_"+to_string(cnt % 6);	
+		std::string e_ssid = "gilgil_is_handsome_"+std::to_string(cnt % 6);	
 		beacon.ssid(e_ssid);
 
 		// Encryption: we'll say we use WPA2-psk encryption
